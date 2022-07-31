@@ -27,7 +27,7 @@ public class EmployeeApp
        session.save(e1);	// to persist Employee Object
        t.commit();
        System.out.println("Data Successfully saved to Database");
-       session.close();
+       session.close(); //object is in detached mode
        sf.close();
        
     }
