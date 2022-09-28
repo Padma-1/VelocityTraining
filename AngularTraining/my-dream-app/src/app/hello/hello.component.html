@@ -1,0 +1,36 @@
+<div id="hello">
+    <h1>Iam a Child HelloComponent</h1>
+    <h1>Data Binding</h1>
+    <h3>Angular Databinding is used for communication. 
+        It is used to communicate between your TypeScript 
+        code (your business logic) and the Template  
+        which is shown to the users i.e. HTML layout.</h3>
+        <h4>String Interpolation -
+            is used to display dynamic data on HTML template (at user end).
+            It facilitates you to make changes on component.ts 
+            file and fetch data from there to HTML template
+        </h4>
+
+        <!--serverID, serverStatus, mainServer defined in hello.component.ts-->
+        <p>Server with ID {{serverID}} is {{serverStatus}}</p>
+        <p>It  is a Main Server :{{mainServer}}</p>
+
+        <p>  
+            My name is {{name}} and i am {{age}} years old  
+            & my Salary is : {{salary}}
+        </p>
+        <h5>{{name}} - {{salary}}</h5>
+
+        <h5> Addition of 50 & 20 is = {{ 50+20 }}</h5>
+        <h5> Subtraction of 50 & 20 is = {{ 50-20 }}</h5>
+        <h5>Bonus of {{name}} = {{salary*.10}}</h5>
+        <h5>Total salary is ={{salary+salary*.10}}</h5>
+
+        <h1> Display Images using Interpolation</h1>
+        <img src= {{imagePath}} width="200px" height="100px">
+
+        <h1>Method Interpolation</h1>
+        <h3>Full Name : {{ getFullName() }}</h3>
+         
+        <h3>Today's Date is : {{convertToDate()}}</h3>
+</div>

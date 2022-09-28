@@ -1,0 +1,40 @@
+<div id="foot">
+    <h2>Property Binding</h2>
+<h4>The Property Binding in Angular Application is used to bind the values of 
+    component or model properties to the HTML element. 
+    Depending on the values, 
+    it will change the existing behavior of the HTML element. 
+</h4>
+
+<h5>The syntax to use property is: [property] = ‘expression’</h5> 
+<hr>
+
+<!--a=right is defined in footer ts file-->
+<h1 [align]="a">Property Binding Demo</h1> 
+
+<h1 [innerHTML]="title"></h1>
+
+<img [src]="img" alt="wipro" width="100px" height="100px">
+
+<button [disabled]="!btnDisabled">Click Me</button>
+
+<h1 [style.color]="color">I am a Footer Component</h1>
+<p [innerHTML]="nameDetails" [style.font-size]="fontSize"></p>
+
+<p [innerHTML]="college" [style.color]="color"></p>
+
+
+<hr>
+<h1>Event Binding</h1>
+<p>This data binding type is when information flows from the view to the component 
+    when an event is triggered. The view sends the data from an event like the 
+    click of a button to be used to update the component. It is the exact 
+    opposite of property binding, where the data goes from the component to the
+     view.
+</p>
+ 
+<h4>My Name is {{name}}</h4>
+
+<button (click)="updateName()">Update Name</button>
+
+</div>

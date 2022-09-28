@@ -1,0 +1,13 @@
+<h1>Hello {{ s }}</h1>
+ 
+<h1>Team Members</h1>
+ 
+<!--users defined in team.component.ts-->
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <!--details coming from reqres.in-->
+    <p>{{ user.first_name }} {{ user.last_name }} - Email : {{ user.email }}</p>
+  </li>
+</ul>
+
