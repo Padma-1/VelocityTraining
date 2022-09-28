@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML Demo</title>
+
+    <script>
+        function addMenu()
+        {
+            document.getElementById("hello").innerHTML="New Menu";
+            let menu=document.getElementById("men");
+ 
+            let li=document.createElement("li");
+            li.textContent="About Us";
+            menu.appendChild(li);
+            document.getElementById("men")=menu;
+            
+        }
+    </script>
+</head>
+<body>
+    <h1 id="hello">Menu</h1>
+    <ul id="men">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+    </ul>
+    <button onclick="addMenu()">Add New Menu</button>
+</body>
+</html>

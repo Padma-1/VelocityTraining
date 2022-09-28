@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterate Over an properties of object Using For  in Loop</title>
+</head>
+<body>
+    <script>
+         // An object with some properties
+         var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+        
+        // Loop through all the properties in the object
+        for(var prop in person) {
+            document.write("<p>" + prop + " = " + person[prop] + "</p>");
+        
+        }
+        
+        
+        // An array with some elements
+        var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+        
+        // Loop through all the elements in the array 
+        for(var i in fruits) {  
+            document.write("<p>" + fruits[i] + "</p>");
+        }
+    </script>
+</body>
+</html>
