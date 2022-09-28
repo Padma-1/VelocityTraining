@@ -1,0 +1,10 @@
+/* This is an External Style Sheet*/
+
+body{background-color: skyblue;
+    font-size:larger;
+    font-family: Courier New;
+}
+
+h1{color:darkorange}
+
+p{color: blue;}

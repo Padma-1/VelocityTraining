@@ -1,0 +1,13 @@
+body{
+    background-color:gold;
+}
+
+h1{
+    color:crimson;
+    text-align: center;
+}
+
+#warning{
+    color: red;
+    font-family: 'Franklin Gothic Medium';
+}
